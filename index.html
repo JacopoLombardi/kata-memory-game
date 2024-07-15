@@ -3,13 +3,53 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <!-- BOOTSTRAP -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+   integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   
+   <!-- google font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+   <title>Memory Game</title>
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+   <div class="_container d-flex justify-content-between bg-danger vh-100 text-white">
+
+      <div class="game_board d-flex flex-wrap">
+         <div class="_card">x</div>
+         <div class="_card">x</div>
+         <div class="_card">x</div>
+         <div class="_card">x</div>
+         <div class="_card">x</div>
+         <div class="_card">x</div>
+         <div class="_card">x</div>
+         <div class="_card">x</div>
+         <div class="_card">x</div>
+         <div class="_card">x</div>
+         <div class="_card">x</div>
+         <div class="_card">x</div>
+      </div>
 
 
-   
+
+
+      <div class="text_board mt-4">
+         <h1 class="text-capitalize">memory game</h1>
+         <ul class="text_description p-0">
+            <p>Abbina i simboli</p>
+            <p>uguali e scopri</p>
+            <p>tutta la griglia</p>
+         </ul>
+         <h3>Errori: </h3>
+      </div>
+
+   </div>
+
+
+   <script src="script.js"></script>
 </body>
 </html>
