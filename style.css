@@ -21,9 +21,14 @@ p {
 }
 
 h3 {
-   font-size: 3rem;
+   font-size: 2.7rem;
    margin-top: 5rem;
 }
+
+img {
+   width: 200px;
+}
+
 
 
 
@@ -34,17 +39,11 @@ h3 {
 }
 
 ._container {
-   padding: 7rem 15rem;
-
+   padding: 7rem 14rem;
 }
 
+
+/* over */
 ._card {
-   height: 200px;
-   width: 200px;
-   background-color: white;
-   color: black;
-   text-align: center;
-   line-height: 200px;
-   margin: 15px;
+   cursor: pointer;
 }
-
