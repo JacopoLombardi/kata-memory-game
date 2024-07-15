@@ -1,38 +1,38 @@
-export const card = {
+export const cardArray = {
 
    alien: {
       id: "1",
-      nome: "alien",
+      name: "alien",
       src: "./image/alien.png"
    },
 
    bug: {
       id: "2",
-      nome: "bug",
+      name: "bug",
       src: "./image/bug.png"
    },
 
    duck: {
       id: "3",
-      nome: "duck",
+      name: "duck",
       src: "./image/duck.png"
    },
 
    rocket: {
       id: "4",
-      nome: "rocket",
+      name: "rocket",
       src: "./image/rocket.png"
    },
 
    spaceship: {
       id: "5",
-      nome: "spaceship",
+      name: "spaceship",
       src: "./image/spaceship.png"
    },
 
-   tiktak: {
+   tiktac: {
       id: "6",
-      nome: "tiktak",
-      src: "./image/tiktak.png"
+      name: "tiktac",
+      src: "./image/tiktac.png"
    }
 };

@@ -9,6 +9,13 @@ body {
 }
 
 
+/* custom class */
+.z_-1{
+   z-index: -1;
+}
+
+
+
 
 /* tag class */
 h1 {
@@ -41,6 +48,14 @@ img {
 ._container {
    padding: 7rem 14rem;
 }
+
+.card_hidden {
+   position: absolute;
+   top: -1rem;
+   left: -1rem;
+}
+
+
 
 
 /* over */
