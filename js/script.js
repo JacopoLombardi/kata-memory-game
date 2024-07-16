@@ -4,19 +4,21 @@ import { cardArray } from './card.js';
 const gameBoard = document.querySelector('.game_board');
 
 
-// Creiamo un array con due copie di ogni carta e includiamo l'ID originale
+// Creiamo un array con due copie di ogni carta e includiamo l'ID NAME originale
 const cardsArrayDuplicated = [];
 for (const key in cardArray) {
-    if (cardArray.hasOwnProperty(key)) {
-        const card = cardArray[key];
-        // Aggiungi due copie della carta con l'ID originale
-        cardsArrayDuplicated.push({ ...card, originalId: key });
-        cardsArrayDuplicated.push({ ...card, originalId: key });
-    }
+    const card = cardArray[key];
+    // Aggiungi due copie con l'ID NAME originale
+    cardsArrayDuplicated.push({ ...card, originalIdName: key });
+    cardsArrayDuplicated.push({ ...card, originalIdName: key });
 }
 
 
-// Funzione per mescolare l'array di carte duplicate utilizzando l'algoritmo di Fisher-Yates
+
+
+
+
+// Funzione per mescolare l'array duplicato
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const x = Math.floor(Math.random() * (i + 1));
@@ -27,7 +29,7 @@ function shuffle(array) {
 }
 
 
-// Mescola l'array di carte duplicate
+// Mescola l'array duplicato
 const shuffledCards = shuffle(cardsArrayDuplicated);
 
 
@@ -38,6 +40,10 @@ shuffledCards.forEach(cardData => {
 });
 
 
+
+
+
+
 // Funzione per creare una singola carta
 function createCard(cardData) {
     // Creo l'elemento retro della carta (div) e gli assegno le classi e l'immagine di sfondo
@@ -45,14 +51,17 @@ function createCard(cardData) {
     backElement.classList.add('_card', 'position-relative', 'm-3');
     backElement.innerHTML = '<img src="./image/back.png" alt="">';
 
-    // Aggiungo l'ID originale della carta come attributo data-id
-    backElement.dataset.id = cardData.originalId;
+    // Aggiungo l'ID NAME originale della carta come attributo 'data-id'
+    // aggiunge un attributo 'data-id' al div
+    backElement.dataset.id = cardData.originalIdName;
+    console.log(backElement.dataset)
 
-
-    // Aggiungo l'evento di clic per gestire l'interazione con la carta
+    // evento di clic per gestire l'interazione con la carta
     backElement.addEventListener('click', () => {
-        console.log(`Hai cliccato sulla carta con ID ${cardData.originalId}`);
-        // Qui puoi aggiungere la logica per gestire il clic sulla carta
+        console.log(`Hai cliccato sulla carta con ID ${cardData.originalIdName}`);
+
+        //logica per gestire il clic sulla carta
+        frontElement.classList.remove('z_-1');
 
 
     });
