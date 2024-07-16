@@ -23,7 +23,7 @@ h1 {
    line-height: 110%;
 }
 
-p {
+ul > p {
    font-size: 1.8rem;
 }
 
