@@ -70,13 +70,19 @@ function startGame() {
 
 // Funzione per gestire il clic sulla carta
 function cardClick(event) {
+    // Ottiene l'elemento che ha scatenato l'evento clic
     const backElement = event.currentTarget;
+    
+    // Ottiene l'elemento frontale della carta, che è il secondo div figlio
     const frontElement = backElement.querySelector('.card_hidden');
 
+    // Se il tabellone è bloccato o se la stessa carta viene cliccata due volte, esci dalla funzione
     if (lockBoard || backElement === firstCard) return;
 
+    // Mostra il fronte della carta (rimuove la classe che lo nasconde)
     frontElement.classList.remove('z_-1');
 
+    // Se la prima carta non è stata ancora selezionata, memorizza questa carta come 'firstCard'
     if (!firstCard) {
         firstCard = backElement;
         return;
@@ -87,6 +93,7 @@ function cardClick(event) {
 
     checkForMatch();
 }
+
 
 
 // Funzione per controllare se le due carte selezionate sono uguali

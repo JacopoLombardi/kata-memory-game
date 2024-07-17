@@ -17,22 +17,18 @@
 </head>
 <body>
 
-   <div class="_container d-flex justify-content-between bg-danger vh-100 text-white position-relative">
+   <div class="_container d-flex justify-content-between vh-100 text-white position-relative">
 
       <!-- campo da gioco -->
       <div class="game_board d-flex flex-wrap">
-
          <!-- <div class="_card position-relative m-3"><img src="/image/back.png" alt="">
             <div class="card_hidden m-3"><img src="/image/alien.png" alt=""></div>
          </div> -->
-
-
       </div>
 
 
-
       <!-- tabellone con le scritte -->
-      <div class="text_board mt-4">
+      <div class="text_board border-start ps-5 mt-4">
          <h1 class="text-capitalize">memory game</h1>
          <ul class="text_description p-0">
             <p>Abbina i simboli</p>
@@ -44,14 +40,14 @@
          </h3>
       </div>
 
+
       <!-- overlay won the game -->
-      <div class="overlay_end_game d-flex flex-column position-absolute d-none">
+      <div class="overlay_end_game d-flex flex-column position-absolute rounded-5 d-none">
          <h2>Hai Vinto</h2>
-         <button class="play_again btn btn-warning rounded-4">Gioca di Ancora</button>
+         <button class="play_again btn btn-warning rounded-4">Gioca Ancora</button>
       </div>
 
    </div>
-
 
    <script type="module" src="js/script.js"></script>
 </body>
