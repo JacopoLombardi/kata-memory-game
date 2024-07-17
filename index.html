@@ -17,7 +17,7 @@
 </head>
 <body>
 
-   <div class="_container d-flex justify-content-between bg-danger vh-100 text-white">
+   <div class="_container d-flex justify-content-between bg-danger vh-100 text-white position-relative">
 
       <!-- campo da gioco -->
       <div class="game_board d-flex flex-wrap">
@@ -42,6 +42,12 @@
          <h3 class="d-flex align-items-center">Errori: 
             <p id="errors" class="m-0 ms-2">0</p>
          </h3>
+      </div>
+
+      <!-- overlay won the game -->
+      <div class="overlay_end_game d-flex flex-column position-absolute d-none">
+         <h2>Hai Vinto</h2>
+         <button class="play_again btn btn-warning rounded-4">Gioca di Ancora</button>
       </div>
 
    </div>

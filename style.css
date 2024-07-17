@@ -32,6 +32,10 @@ h3 {
    margin-top: 5rem;
 }
 
+h2 {
+   font-size: 5rem;
+}
+
 img {
    width: 200px;
 }
@@ -55,7 +59,24 @@ img {
    left: -1rem;
 }
 
+.overlay_end_game {
+   height: 60%;
+   width: 70%;
+   background-color: rgb(54, 54, 54);
 
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   
+   justify-content: center;
+   align-items: center;
+}
+
+.play_again {
+   margin-top: 3rem;
+   padding: 15px 25px;
+   font-size: 1.5rem;
+}
 
 
 /* over */
