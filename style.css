@@ -103,7 +103,8 @@ img {
       justify-content: start !important;
       width: auto;
       height: 100%;
-      padding: 0.5rem;
+      padding: 1rem;
+      min-width: 300px;
    }
 
    .text_description {
@@ -144,7 +145,7 @@ img {
 
    /* img of cards */
    ._card {
-      margin: 5px !important;
+      margin: 2px !important;
    }
 
 
@@ -152,7 +153,8 @@ img {
 
    /* tag class */
    img {
-      width: 120px;
+      width: 110px;
+
    }
 
    h1 {
@@ -171,6 +173,8 @@ img {
 
    h2 {
       font-size: 2.5rem;
+      margin: 0 10px;
+      text-align: center;
    }
 
 
