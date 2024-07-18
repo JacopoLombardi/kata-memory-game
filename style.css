@@ -92,10 +92,12 @@ img {
 
 
 
+
+
 /* mediaquery */
 
-/* quando la vista è inferiore a 576px */
-@media (max-width: 576px) {
+/* quando la vista è inferiore a 1200px */
+@media (max-width: 1200px) {
 
 	._container {
       flex-direction: column-reverse;
@@ -115,7 +117,6 @@ img {
    .game_board {
       justify-content: center;
       flex-wrap: wrap;
-      max-width: 400px;
       margin-bottom: 4rem;
    }
 
@@ -143,9 +144,10 @@ img {
    }
 
 
+
    /* img of cards */
    ._card {
-      margin: 2px !important;
+      margin: 0 !important;
    }
 
 
@@ -153,7 +155,7 @@ img {
 
    /* tag class */
    img {
-      width: 110px;
+      width: 100px;
 
    }
 

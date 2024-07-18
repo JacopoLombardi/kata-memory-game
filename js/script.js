@@ -77,7 +77,7 @@ function cardClick(event) {
     const frontElement = backElement.querySelector('.card_hidden');
 
     // Se il tabellone è bloccato o se la stessa carta viene cliccata due volte, esci dalla funzione
-    if (lockBoard || backElement === firstCard) return;
+    if (lockBoard || (backElement === firstCard)) return;
 
     // Mostra il fronte della carta (rimuove la classe che lo nasconde)
     frontElement.classList.remove('z_-1');
