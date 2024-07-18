@@ -9,6 +9,7 @@ body {
 }
 
 
+
 /* custom class */
 .z_-1{
    z-index: -1;
@@ -52,6 +53,7 @@ img {
 ._container {
    background-color: rgb(28, 28, 196);
    padding: 7rem 14rem;
+   height: 100vh;
 }
 
 .card_hidden {
@@ -83,4 +85,93 @@ img {
 /* over */
 ._card {
    cursor: pointer;
+}
+
+
+
+
+
+
+/* mediaquery */
+
+/* quando la vista è inferiore a 576px */
+@media (max-width: 576px) {
+
+	._container {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: start !important;
+      width: auto;
+      height: 100%;
+      padding: 0.5rem;
+   }
+
+   .text_description {
+      margin-top: 2rem;
+      line-height: 40%;
+   }
+
+   .game_board {
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 400px;
+      margin-bottom: 4rem;
+   }
+
+   .text_board {
+      text-align: center;
+   }
+
+   .error_ {
+      justify-content: center;
+   }
+
+   .overlay_end_game {
+      height: 60%;
+      width: 90%;
+
+      top: 65%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+   }
+
+   .play_again {
+      max-width: 200px;
+      font-size: 1.3rem;
+      padding: 10px 15px;
+   }
+
+
+   /* img of cards */
+   ._card {
+      margin: 5px !important;
+   }
+
+
+
+
+   /* tag class */
+   img {
+      width: 120px;
+   }
+
+   h1 {
+      font-size: 3rem;
+      line-height: 110%;
+   }
+
+   ul > p {
+      font-size: 1rem;
+   }
+
+   h3 {
+      font-size: 1.6rem;
+      margin: 3rem 0;
+   }
+
+   h2 {
+      font-size: 2.5rem;
+   }
+
+
 }
